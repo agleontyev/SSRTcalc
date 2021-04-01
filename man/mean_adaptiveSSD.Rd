@@ -22,5 +22,5 @@ Spline-interpolated stop-signal reaction time corresponding roughly to 50% inhib
 Estimating SSRT using mean method for studies that use adaptive (increasing/decreasing by a given increment) stop-signal delays
 }
 \examples{
-mean_adaptiveSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa', rt_col = 'RT')
+\dontrun{mean_adaptiveSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa', rt_col = 'RT')}
 }

@@ -26,7 +26,7 @@ Stop-signal reaction time corresponding roughly to 50% inhibition accuracy
 Estimating SSRT using mean method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays
 }
 \examples{
-mean_fixedSSD(df = results_df, rt_col = 'RT', stop_col = 'stopgo', acc_col = 'sst_acc', ssd_col = 'soa', ssd_list = c(0.1, 0.2, 0.3, 0.5, 0.6))
+\dontrun{mean_fixedSSD(df = results_df, rt_col = 'RT', stop_col = 'stopgo', acc_col = 'sst_acc', ssd_col = 'soa', ssd_list = c(0.1, 0.2, 0.3, 0.5, 0.6))}
 
 
 

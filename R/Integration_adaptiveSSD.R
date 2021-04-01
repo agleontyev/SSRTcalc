@@ -8,8 +8,7 @@
 #' @param acc_col Name of the column in the dataframe \code{df} that contains accuracy of inhibition ( 0 = incorrect, 1 = correct)
 #' @param ssd_col Name of the column in the dataframe \code{df} that contains stop-signal delays
 #' @return SSRT corresponding to the \code{ nth rt - ssd; n = p(respond|signal)*number of goRTs}
-#' @examples
-#' integration_adaptiveSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa', rt_col = 'RT', acc_col = 'acc')
+#' @examples integration_adaptiveSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa', rt_col = 'RT', acc_col = 'acc')
 
 
 

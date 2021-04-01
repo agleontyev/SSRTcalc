@@ -9,8 +9,7 @@
 #' @param ssd_col Name of the column in the dataframe \code{df} that contains stop-signal delays
 #' @param ssd_list List of stop-signal delays used in the experiment
 #' @return SSRT corresponding to the \code{nth rt - ssd; n = p(respond|signal)*number of goRTs}
-#' @examples
-#' integration_fixedSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa', rt_col = 'RT', acc_col = 'acc', ssd_list = c(0.4, 0.6, 0.8, 0.9, 1.0))
+#' @examples integration_fixedSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa', rt_col = 'RT', acc_col = 'acc', ssd_list = c(0.4, 0.6, 0.8, 0.9, 1.0))
 
 
 

@@ -10,8 +10,7 @@
 #' @param ssd_col Name of the column in the dataframe \code{df} that contains stop-signal delays
 #' @param ssd_list List of stop-signal delays used in the experiment
 #' @return  Stop-signal reaction time corresponding roughly to 50% inhibition accuracy
-#' @examples
-#' mean_fixedSSD(df = results_df, rt_col = 'RT', stop_col = 'stopgo', acc_col = 'sst_acc', ssd_col = 'soa', ssd_list = c(0.1, 0.2, 0.3, 0.5, 0.6))
+#' @examples mean_fixedSSD(df = results_df, rt_col = 'RT', stop_col = 'stopgo', acc_col = 'sst_acc', ssd_col = 'soa', ssd_list = c(0.1, 0.2, 0.3, 0.5, 0.6))
 #'
 #'
 #'

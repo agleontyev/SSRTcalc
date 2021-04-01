@@ -7,8 +7,7 @@
 #' @param rt_col Name of the column in the dataframe \code{df} that contains response time in seconds
 #' @param ssd_col Name of the column in the dataframe \code{df} that contains stop-signal delays
 #' @return Spline-interpolated stop-signal reaction time corresponding roughly to 50% inhibition accuracy.
-#' @examples
-#' mean_adaptiveSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa', rt_col = 'RT')
+#' @examples mean_adaptiveSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa', rt_col = 'RT')
 
 
 # "The mean method uses the mean of the inhibition function,

@@ -16,7 +16,7 @@ mean_adaptiveSSD(df, rt_col, ssd_col, stop_col)
 \item{stop_col}{Name of the column in the dataframe \code{df} that indicates whether a given trial is a "stop" or a "go" trial ( 0 = go, 1 = stop)}
 }
 \value{
-Spline-interpolated stop-signal reaction time corresponding roughly to 50% inhibition accuracy
+Spline-interpolated stop-signal reaction time corresponding roughly to 50% inhibition accuracy.
 }
 \description{
 Estimating SSRT using mean method for studies that use adaptive (increasing/decreasing by a given increment) stop-signal delays

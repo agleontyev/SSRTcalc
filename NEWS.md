@@ -1,3 +1,9 @@
+# SSRTcalc 0.1.4
+
+* Rebuilt for R 4.0.5.
+
+---
+
 
 # SSRTcalc 0.1.3
 

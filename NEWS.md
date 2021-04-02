@@ -1,7 +1,7 @@
 
 # SSRTcalc 0.1.3
 
-* Now SSRT cannot be equal to zero, returs NaN instead.
+* Now SSRT cannot be equal to zero, returns NaN instead.
 
 ---
 

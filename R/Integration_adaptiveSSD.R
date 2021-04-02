@@ -37,7 +37,7 @@ integration_adaptiveSSD <- function(df, stop_col, rt_col, acc_col, ssd_col) {
   nthrt <- df1[,rt_col][nthindex]
   ssrt_raw <- nthrt - meanssd
 
-  if(isTRUE(ssrt_raw < 0)){
+  if(isTRUE(ssrt_raw <= 0)){
     ssrt = NA
   } else {
     ssrt = ssrt_raw

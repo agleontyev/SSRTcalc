@@ -34,7 +34,7 @@ mean_fixedSSD <- function(df, stop_col, rt_col, acc_col, ssd_col, ssd_list) {
   z <- f_of_ssd(0.5, deriv = 0)
   meanRTGO <- mean(go_trials[, rt_co], na.rm = TRUE)
   ssrt_raw = meanRTGO - z
-  if(isTRUE(ssrt_raw < 0)){
+  if(isTRUE(ssrt_raw <= 0)){
     ssrt <- NA
   } else {
     ssrt <- ssrt_raw

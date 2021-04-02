@@ -43,7 +43,7 @@ integration_fixedSSD <- function(df, stop_col, rt_col, acc_col, ssd_col, ssd_lis
   nthindex = as.integer(round(nrt*overall_prob))
   nthrt <- df1[,rt_col][nthindex]
   ssrt_raw = nthrt - ssd
-  if(isTRUE(ssrt_raw < 0)){
+  if(isTRUE(ssrt_raw <= 0)){
     ssrt <- NA
   } else {
     ssrt <- ssrt_raw

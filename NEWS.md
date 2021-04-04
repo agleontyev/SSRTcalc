@@ -1,3 +1,9 @@
+
+# SSRTcalc 0.2.1
+
+* Added plotting functions.
+---
+
 # SSRTcalc 0.1.4
 
 * Rebuilt for R 4.0.5.

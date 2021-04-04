@@ -23,7 +23,7 @@ integration_fixedSSD(df, stop_col, rt_col, acc_col, ssd_col, ssd_list)
 SSRT corresponding to the \code{nth rt - ssd; n = p(respond|signal)*number of goRTs}
 }
 \description{
-Estimating SSRT using integration method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays
+Estimating SSRT using integration method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays.
 }
 \examples{
 \dontrun{integration_fixedSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa',

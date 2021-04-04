@@ -21,7 +21,7 @@ integration_adaptiveSSD(df, stop_col, rt_col, acc_col, ssd_col)
 SSRT corresponding to the \code{ nth rt - ssd; n = p(respond|signal)*number of goRTs}
 }
 \description{
-Estimating SSRT using integration method for studies that use adaptive (increasing/decreasing by a given increment) stop-signal delays
+Estimating SSRT using integration method for studies that use adaptive (increasing/decreasing by a given increment) stop-signal delays.
 }
 \examples{
 \dontrun{integration_adaptiveSSD(df = results_df, stop_col = 'stopgo',

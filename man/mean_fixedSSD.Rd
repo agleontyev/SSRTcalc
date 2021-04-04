@@ -20,7 +20,7 @@ mean_fixedSSD(df, stop_col, rt_col, acc_col, ssd_col, ssd_list)
 \item{ssd_list}{List of stop-signal delays used in the experiment}
 }
 \value{
-Stop-signal reaction time corresponding roughly to 50% inhibition accuracy
+Stop-signal reaction time corresponding roughly to 50 percent inhibition accuracy.
 }
 \description{
 Estimating SSRT using mean method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays

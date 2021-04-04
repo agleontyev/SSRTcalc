@@ -1,6 +1,6 @@
 #' SSRT using integration method for studies with "fixed" method of setting SSD
 #'
-#' Estimating SSRT using integration method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays
+#' Estimating SSRT using integration method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays.
 #' @export
 #' @param df  Dataframe with response time, accuracy, indication whether trial is stop or go, and delays for a given trial.
 #' @param stop_col Name of the column in the dataframe \code{df} that indicates whether a given trial is a "stop" or a "go" trial ( 0 = go, 1 = stop)

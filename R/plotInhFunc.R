@@ -21,18 +21,16 @@ plotInhFunc <- function(df, stop_col, ssd_col, acc_col) {
   stop_trials <- df[ which(df[,stop_col]==1), ]
   soas <- unique(stop_trials[,ssd_col])
   soas <- sort(soas)
-  acc_vec <- c()
+  acc_soas <- data.frame()
   for (soa in soas){
     stp_tr <- stop_trials[ which(stop_trials[,ssd_col]==soa), ]
     total_stops <- sum(stp_tr[,acc_col])
     total_trials <- nrow(stp_tr)
     ssd_acc <- total_stops/total_trials
-    acc_vec <- c(acc_vec, ssd_acc)
-    print(soa)
-    print(ssd_acc)
+    acc_soas = rbind(acc_soas, data.frame(soa, ssd_acc))
   }
-  plot_df <- data.frame(acc_vec, soas)
-  plot(soas, acc_vec, type = 'l', xlab = 'Stop-signal delays', ylab = 'Accuracy', main = 'Inhibition function', col ='red', lwd=3)
+  print(acc_soas)
+  plot(acc_soas$soa, acc_soas$ssd_acc, type = 'l', xlab = 'Stop-signal delays', ylab = 'Accuracy', main = 'Inhibition function', col ='red', lwd=3)
 
 }
 

@@ -1,4 +1,11 @@
 
+# SSRTcalc 0.2.2
+
+* Slightly changed plotting.
+---
+
+
+
 # SSRTcalc 0.2.1
 
 * Added plotting functions.

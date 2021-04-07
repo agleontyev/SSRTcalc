@@ -1,3 +1,7 @@
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/agleontyev/SSRTcalc/workflows/R-CMD-check/badge.svg)](https://github.com/agleontyev/SSRTcalc/actions)
+<!-- badges: end -->
+
 # SSRTcalc
 
 Tools to estimate stop-signal reaction time in R

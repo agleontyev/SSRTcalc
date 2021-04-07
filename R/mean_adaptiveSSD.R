@@ -27,7 +27,7 @@ mean_adaptiveSSD <- function (df, rt_col, ssd_col, stop_col)
   meanRT <-mean(go_trials[,rt_col], na.rm = TRUE)
   meanSSD <- mean(stop_trials[,ssd_col])
   ssrt_raw <- meanRT - meanSSD
-  if(isTrue(ssrt_raw <= 0)){
+  if(isTRUE(ssrt_raw <= 0)){
     ssrt <- NA
   } else {
     ssrt <- ssrt_raw

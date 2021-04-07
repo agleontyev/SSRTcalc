@@ -1,9 +1,14 @@
 
+# SSRTcalc 0.2.3
+
+* Fixed spelling errors.
+
+---
+
 # SSRTcalc 0.2.2
 
 * Slightly changed plotting.
 ---
-
 
 
 # SSRTcalc 0.2.1

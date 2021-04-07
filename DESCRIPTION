@@ -1,11 +1,12 @@
 Package: SSRTcalc
 Type: Package
 Title: Easy SSRT Calculation in R
-Version: 0.2.2
-Author: Anton Leontyev
+Version: 0.2.3
+Author: person("Anton", "Leontyev", email = "a.g.leontiev@tamu.edu", comment = c(ORCID = "0000-0001-8880-6161"),  role = c("aut", "cre"))
 Maintainer: Anton Leontyev <a.g.leontiev@tamu.edu>
-Description: This is a collection of functions to calculate stop-signal reaction time (SSRT) in R. This package includes functions for both integration and mean methods; both fixed and adaptive stop-signal delays are supported (see appropriate functions).
+Description: This is a collection of functions to calculate stop-signal reaction time (SSRT) in R. Includes functions for both "integration" and "mean" methods; both fixed and adaptive stop-signal delays are supported (see appropriate functions). Calculation is based on Verbruggen et al. (2019) <doi:10.7554/eLife.46323.001> and Verbruggen et al. (2013) <doi:10.1177/0956797612457390>. 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Imports: stats (>= 4.0.5)

@@ -29,10 +29,10 @@ mean_fixedSSD <- function(df, stop_col, rt_col, acc_col, ssd_col, ssd_list) {
   }
 
   df_total <- rbind(d,df)
-  f_of_ssd <- splinefun(ssd_acc,ssd)
+  f_of_ssd <- stats::splinefun(ssd_acc,ssd)
 
   z <- f_of_ssd(0.5, deriv = 0)
-  meanRTGO <- mean(go_trials[, rt_co], na.rm = TRUE)
+  meanRTGO <- mean(go_trials[, rt_col], na.rm = TRUE)
   ssrt_raw = meanRTGO - z
   if(isTRUE(ssrt_raw <= 0)){
     ssrt <- NA

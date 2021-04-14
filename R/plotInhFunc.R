@@ -7,7 +7,10 @@
 #' @param acc_col Name of the column in the dataframe \code{df} that contains accuracy of inhibition ( 0 = incorrect, 1 = correct)
 #' @param ssd_col Name of the column in the dataframe \code{df} that contains stop-signal delays
 #' @return Line plot of the inhibition function.
-#' @examples \dontrun{plotInhFunc(df = df, stop_col='vol', ssd_col='soa', acc_col='agn_acc')}
+#' @examples
+#' data(fixed)
+#' df <- subset(fixed, new_id == 3)
+#' plotInhFunc(df = df, stop_col='vol', ssd_col='soa', acc_col='acc')
 
 
 

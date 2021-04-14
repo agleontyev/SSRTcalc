@@ -8,8 +8,10 @@
 #' @param acc_col Name of the column in the dataframe \code{df} that contains accuracy of inhibition ( 0 = incorrect, 1 = correct)
 #' @param ssd_col Name of the column in the dataframe \code{df} that contains stop-signal delays
 #' @return SSRT corresponding to the \code{ nth rt - ssd; n = p(respond|signal)*number of goRTs}
-#' @examples \dontrun{integration_adaptiveSSD(df = results_df, stop_col = 'stopgo',
-#' ssd_col = 'soa', rt_col = 'RT', acc_col = 'acc')}
+#' @examples
+#' data(adaptive)
+#' sapply(split(adaptive, adaptive$new_id), integration_adaptiveSSD, stop_col = 'vol', ssd_col = 'soa', rt_col = 'RT_exp', acc_col = 'correct')
+
 
 
 
@@ -33,7 +35,7 @@ integration_adaptiveSSD <- function(df, stop_col, rt_col, acc_col, ssd_col) {
   df1 <- go_trials[order(go_trials[,rt_col], na.last = NA) , ]
   nrt <- length(df1[,rt_col])
   nthindex = as.integer(round(nrt*overall_prob))
-  meanssd = mean(stop_trials[, ssd_col])
+  meanssd = mean(stop_trials[, ssd_col], na.rm =TRUE)
   nthrt <- df1[,rt_col][nthindex]
   ssrt_raw <- nthrt - meanssd
 

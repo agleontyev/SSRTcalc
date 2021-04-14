@@ -1,4 +1,10 @@
 
+# SSRTcalc 0.3.3
+
+* Added example data sets and amended example sections.
+
+---
+
 # SSRTcalc 0.2.3
 
 * Fixed spelling errors.

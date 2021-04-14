@@ -1,4 +1,4 @@
-#' SSRT using mean method for studies with "fixed" method of setting SSD
+
 #'
 #' Estimating SSRT using mean method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays
 #'
@@ -10,28 +10,31 @@
 #' @param ssd_col Name of the column in the dataframe \code{df} that contains stop-signal delays
 #' @param ssd_list List of stop-signal delays used in the experiment
 #' @return  Stop-signal reaction time corresponding roughly to 50 percent inhibition accuracy.
-#' @examples \dontrun{mean_fixedSSD(df = results_df, rt_col = 'RT', stop_col = 'stopgo', acc_col = 'sst_acc',
-#' ssd_col = 'soa', ssd_list = c(0.1, 0.2, 0.3, 0.5, 0.6))}
+#' @examples
+#' data(fixed)
+#' sapply(split(fixed, fixed$new_id), mean_fixedSSD, stop_col = 'vol',acc_col ='acc', rt_col = 'RT_exp', ssd_col = 'soa',ssd_list = c(0.1, 0.2,0.3, 0.4, 0.5, 0.6))
 #'
 #'
 #'
 #'
+
 mean_fixedSSD <- function(df, stop_col, rt_col, acc_col, ssd_col, ssd_list) {
-
-  stop_trials <- df[ which(df[,stop_col]==1), ]
+try({
+  stop_trials <- df[ which(df[,stop_col]==1),]
   go_trials <- df[ which(df[,stop_col] == 0),]
-  d <- NULL
-  for (ssd in ssd_list){
-
-    stop_chunck <- stop_trials[ which(stop_trials[,ssd_col]==ssd), ]
-    ssd_acc <- length(stop_chunck[,acc_col])/sum(stop_chunck[,acc_col])
-    df_ssd_acc <- data.frame(ssd_acc,ssd)
+  acc_soas <- data.frame()
+  soas = ssd_list
+  for (soa in soas){
+    stp_tr <- stop_trials[ which(stop_trials[,ssd_col]==soa), ]
+    total_stops <- sum(stp_tr[,acc_col])
+    total_trials <- nrow(stp_tr)
+    ssd_acc <- total_stops/total_trials
+    acc_soas = rbind(acc_soas, data.frame(soa, ssd_acc))
   }
 
-  df_total <- rbind(d,df)
-  f_of_ssd <- stats::splinefun(ssd_acc,ssd)
+  f_of_ssd <- stats::splinefun(soa,ssd_acc)
 
-  z <- f_of_ssd(0.5, deriv = 0)
+  z <- f_of_ssd(0.5, deriv = 0) #evaluate the interpolating cubic spline (deriv = 0)
   meanRTGO <- mean(go_trials[, rt_col], na.rm = TRUE)
   ssrt_raw = meanRTGO - z
   if(isTRUE(ssrt_raw <= 0)){
@@ -41,5 +44,5 @@ mean_fixedSSD <- function(df, stop_col, rt_col, acc_col, ssd_col, ssd_list) {
   }
 
   return(ssrt)
-
+})
 }

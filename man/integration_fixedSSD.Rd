@@ -26,6 +26,6 @@ SSRT corresponding to the \code{nth rt - ssd; n = p(respond|signal)*number of go
 Estimating SSRT using integration method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays.
 }
 \examples{
-\dontrun{integration_fixedSSD(df = results_df, stop_col = 'stopgo',  ssd_col = 'soa',
-rt_col = 'RT', acc_col = 'acc', ssd_list = c(0.4, 0.6, 0.8, 0.9, 1.0))}
+data(fixed)
+sapply(split(fixed, fixed$new_id), integration_fixedSSD, stop_col = 'vol',acc_col ='acc', rt_col = 'RT_exp', ssd_col = 'soa',ssd_list = c(0.1, 0.2,0.3, 0.4, 0.5, 0.6))
 }

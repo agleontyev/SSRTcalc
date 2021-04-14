@@ -2,7 +2,7 @@
 % Please edit documentation in R/mean_fixedSSD.R
 \name{mean_fixedSSD}
 \alias{mean_fixedSSD}
-\title{SSRT using mean method for studies with "fixed" method of setting SSD}
+\title{Estimating SSRT using mean method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays}
 \usage{
 mean_fixedSSD(df, stop_col, rt_col, acc_col, ssd_col, ssd_list)
 }
@@ -26,8 +26,8 @@ Stop-signal reaction time corresponding roughly to 50 percent inhibition accurac
 Estimating SSRT using mean method for studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays
 }
 \examples{
-\dontrun{mean_fixedSSD(df = results_df, rt_col = 'RT', stop_col = 'stopgo', acc_col = 'sst_acc',
-ssd_col = 'soa', ssd_list = c(0.1, 0.2, 0.3, 0.5, 0.6))}
+data(fixed)
+sapply(split(fixed, fixed$new_id), mean_fixedSSD, stop_col = 'vol',acc_col ='acc', rt_col = 'RT_exp', ssd_col = 'soa',ssd_list = c(0.1, 0.2,0.3, 0.4, 0.5, 0.6))
 
 
 

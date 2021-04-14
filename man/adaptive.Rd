@@ -11,9 +11,8 @@ A data frame with 36288 rows and 7 variables
  \item{soa}{stop-signal delay (ignore for "go" trials)}
  \item{vol}{stop (1) or go (0) trial}
  \item{coh}{Percent coherent dots in the kinematogram go task}
- \item{RT_exp}{Response time in seonds, NA if no response was made}
- \item{response}{Which button did the participant click?}
- \item{agn_acc}{Did the participant respond in "go" trials/omit response in "stop" trials (1) or not(0)?}
+ \item{RT_exp}{Response time in seconds, NA if no response was made}
+ \item{correct}{Did the participant correctly respond in "go" trials/omit response in "stop" trials (1) or not(0)?}
 }
 }
 \source{

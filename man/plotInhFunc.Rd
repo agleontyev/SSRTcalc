@@ -22,5 +22,7 @@ Line plot of the inhibition function.
 Plots and prints stop-signal delays and corresponding accuracies. For studies that use fixed (randomly chosen on each trial from a pre-determined set) stop-signal delays.
 }
 \examples{
-\dontrun{plotInhFunc(df = df, stop_col='vol', ssd_col='soa', acc_col='agn_acc')}
+data(fixed)
+df <- subset(fixed, new_id == 3)
+plotInhFunc(df = df, stop_col='vol', ssd_col='soa', acc_col='acc')
 }

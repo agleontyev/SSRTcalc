@@ -14,7 +14,7 @@ For this package to work, the data has to be in the long format (i.e., each row 
 sapply(split(df, df$SubjID), integration_adaptiveSSD, stop_col = 'vol',rt_col = 'RT_exp', acc_col = 'correct', ssd_col = 'soa')
 ```
 
-NB: the package is in beta version and has been tested only locally. 
+NB: the package is in beta version. 
 
 ## Installation
 Run the following in your R/RStudio console:

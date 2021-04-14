@@ -8,4 +8,5 @@ License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.1.1
 LazyData: True
+Depends: R (>= 3.5.0)
 Imports: stats (>= 4.0.5)

@@ -25,5 +25,6 @@ Estimating SSRT using integration method for studies that use adaptive (increasi
 }
 \examples{
 data(adaptive)
-sapply(split(adaptive, adaptive$new_id), integration_adaptiveSSD, stop_col = 'vol', ssd_col = 'soa', rt_col = 'RT_exp', acc_col = 'correct')
+sapply(split(adaptive, adaptive$new_id), integration_adaptiveSSD, stop_col = 'vol',
+ssd_col = 'soa', rt_col = 'RT_exp', acc_col = 'correct')
 }

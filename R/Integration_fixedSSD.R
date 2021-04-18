@@ -11,7 +11,8 @@
 #' @return SSRT corresponding to the \code{nth rt - ssd; n = p(respond|signal)*number of goRTs}
 #' @examples
 #' data(fixed)
-#' sapply(split(fixed, fixed$new_id), integration_fixedSSD, stop_col = 'vol',acc_col ='acc', rt_col = 'RT_exp', ssd_col = 'soa',ssd_list = c(0.1, 0.2,0.3, 0.4, 0.5, 0.6))
+#' sapply(split(fixed, fixed$new_id), integration_fixedSSD, stop_col = 'vol',acc_col ='acc',
+#' rt_col = 'RT_exp', ssd_col = 'soa',ssd_list = c(0.1, 0.2,0.3, 0.4, 0.5, 0.6))
 
 
 

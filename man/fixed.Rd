@@ -11,7 +11,7 @@ A data frame with 29376 rows and 7 variables
  \item{soa}{stop-signal delay (ignore for "go" trials)}
  \item{vol}{stop (1) or go (0) trial}
  \item{coh}{Percent coherent dots in the kinematogram go task}
- \item{RT_exp}{Response time in seonds, NA if no response was made}
+ \item{RT_exp}{Response time in seconds, NA if no response was made}
  \item{response}{Which button did the participant click?}
  \item{acc}{Did the participant respond in "go" trials/omit response in "stop" trials (1) or not(0)?}
 }
@@ -32,6 +32,6 @@ head(fixed)
 }
 \references{
 Leontyev and Yamauchi (2019) PLoS One
-(\href{ https://doi.org/10.1371/journal.pone.0225437}{DOI})
+(\doi{10.1371/journal.pone.0225437})
 }
 \keyword{datasets}

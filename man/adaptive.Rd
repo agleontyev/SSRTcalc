@@ -31,6 +31,6 @@ head(adaptive)
 }
 \references{
 Leontyev and Yamauchi (2019) PLoS One
-(\href{ https://doi.org/10.1371/journal.pone.0225437}{DOI})
+(\doi{10.1371/journal.pone.0225437})
 }
 \keyword{datasets}

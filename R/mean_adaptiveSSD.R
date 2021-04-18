@@ -9,7 +9,8 @@
 #' @return Spline-interpolated stop-signal reaction time corresponding roughly to 50% inhibition accuracy.
 #' @examples
 #' data(adaptive)
-#' sapply(split(adaptive, adaptive$new_id), mean_adaptiveSSD, stop_col = 'vol', ssd_col = 'soa', rt_col = 'RT_exp')
+#' sapply(split(adaptive, adaptive$new_id), mean_adaptiveSSD, stop_col = 'vol',
+#' ssd_col = 'soa', rt_col = 'RT_exp')
 
 
 

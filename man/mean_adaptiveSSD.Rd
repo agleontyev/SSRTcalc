@@ -23,5 +23,6 @@ Estimating SSRT using mean method for studies that use adaptive (increasing/decr
 }
 \examples{
 data(adaptive)
-sapply(split(adaptive, adaptive$new_id), mean_adaptiveSSD, stop_col = 'vol', ssd_col = 'soa', rt_col = 'RT_exp')
+sapply(split(adaptive, adaptive$new_id), mean_adaptiveSSD, stop_col = 'vol',
+ssd_col = 'soa', rt_col = 'RT_exp')
 }

@@ -2,6 +2,8 @@
 [![R-CMD-check](https://github.com/agleontyev/SSRTcalc/workflows/R-CMD-check/badge.svg)](https://github.com/agleontyev/SSRTcalc/actions)
 <!-- badges: end -->
 
+UPD: this package has been published on CRAN!
+
 # SSRTcalc
 
 Tools to estimate stop-signal reaction time in R
@@ -13,8 +15,6 @@ For this package to work, the data has to be in the long format (i.e., each row 
 ```{r}
 sapply(split(df, df$SubjID), integration_adaptiveSSD, stop_col = 'vol',rt_col = 'RT_exp', acc_col = 'correct', ssd_col = 'soa')
 ```
-
-NB: the package is in beta version. 
 
 ## Installation
 Run the following in your R/RStudio console:

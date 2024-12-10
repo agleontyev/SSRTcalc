@@ -26,4 +26,4 @@ devtools::install_github("agleontyev/SSRTcalc")
 
 ## Contact me  
 
-Any questions/concerns/suggestions are welcome. Contact me at a.g.leontiev@tamu.edu or a.g.leontiev@gmail.com
+Any questions/concerns/suggestions are welcome. Contact me at axleonty@geneva.edu

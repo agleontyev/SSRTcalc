@@ -1,3 +1,7 @@
+  <!-- badges: start -->
+  [![R-universe version](https://agleontyev.r-universe.dev/SSRTcalc/badges/version)](https://agleontyev.r-universe.dev/SSRTcalc)
+  <!-- badges: end -->
+
 # SSRTcalc
 
 Tools to estimate stop-signal reaction time (SSRT) in R, following the

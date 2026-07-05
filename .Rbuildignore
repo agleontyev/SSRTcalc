@@ -1,0 +1,17 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^README\.Rmd$
+^\.github$
+^LICENSE$
+^cran-comments\.md$
+^CRAN-SUBMISSION$
+^SUBMISSION_CHECKLIST\.md$
+^SSRTcalc.*\.tar\.gz$
+^SSRTcalc.*\.zip$
+^.*\.Rcheck$
+^\.gitignore$
+^inst/stan/.*\.exe$
+^inst/stan/.*\.hpp$
+^inst/stan/.*\.o$
+^inst/stan/ssrt_single$
+^inst/stan/ssrt_hier$
